@@ -49,7 +49,7 @@ export interface GovernancePillar {
 }
 
 export const ASH_IMAGES = {
-  heroCoastal: '/src/assets/images/hero_coastal_fintech_1794856562352.jpg',
+  heroCoastal: '/src/assets/images/hero_coastal_ashwave_signage_1794861578455.jpg',
   kineticCard: '/src/assets/images/kinetic_card_ocean_1794856563918.jpg',
   steelChainWave: '/src/assets/images/steelchain_wave_sculpture_1794856567723.jpg',
   seaweedApp: '/src/assets/images/seaweed_coastal_app_1794856566950.jpg',

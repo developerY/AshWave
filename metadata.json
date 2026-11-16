@@ -1,0 +1,6 @@
+{
+  "name": "AshWave — Kinetic Financial Network",
+  "description": "AI banking, Proof of Useful Work blockchain, zkML credit intelligence, and coastal fintech ecosystem.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --aw-canvas: #F6FBF9;
+    --aw-surface: #ECF7F3;
+    --aw-surface-mint: #E0F3EC;
+    --aw-surface-card: #FFFFFF;
+    --aw-border: #C4E2D8;
+    --aw-ink: #0B2530;
+    --aw-ink-muted: #3A5D6A;
+    --aw-ocean: #0C5F84;
+    --aw-ocean-deep: #084561;
+    --aw-sky: #2596CA;
+    --aw-seafoam: #7FD8BE;
+    --aw-mint: #A7EBD2;
+    --aw-sun: #E9A84C;
+    --aw-sand: #F7F2E7;
+  }
+
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    scroll-behavior: smooth;
+    background-color: var(--aw-canvas);
+    color: var(--aw-ink);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    text-wrap: balance;
+  }
+
+  .font-mono-tabular {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Gentle coastal breeze & wave transitions respecting reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

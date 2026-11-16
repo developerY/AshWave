@@ -57,7 +57,6 @@ export const ASH_IMAGES = {
 
 export const EXTERNAL_LINKS = {
   kineticPaper: 'https://zoewave.medium.com/ashwave-kinetic-financial-network-851770e0073b',
-  zoeWave: 'https://www.zoewave.com',
   ashWaveOrigin: 'https://www.ashwave.com',
 } as const;
 

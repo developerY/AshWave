@@ -86,14 +86,8 @@ import {EXTERNAL_LINKS} from '../data/ashwave-data';
                 </a>
               </li>
               <li>
-                <a
-                  [href]="links.zoeWave"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center gap-1.5 hover:text-[#0C5F84] transition-colors"
-                >
-                  <span>ZoeWave Philosophy</span>
-                  <mat-icon class="!text-[15px] !w-[15px] !h-[15px]">north_east</mat-icon>
+                <a routerLink="/ecosystem" class="hover:text-[#0C5F84] transition-colors">
+                  Balance Wave Philosophy
                 </a>
               </li>
               <li>
@@ -113,7 +107,7 @@ import {EXTERNAL_LINKS} from '../data/ashwave-data';
           class="mt-10 flex flex-col gap-3 border-t border-[#C4E2D8] pt-6 text-xs text-[#3A5D6A] sm:flex-row sm:items-center sm:justify-between"
         >
           <span>© 2026 AshWave · Kinetic Financial Network. All rights reserved.</span>
-          <span>ZoeWave (Life / Water) · AshWave (Renewal / Fire)</span>
+          <span>Maximize Your Life (Water) · Minimize Your Debt (Fire)</span>
         </div>
       </div>
     </footer>

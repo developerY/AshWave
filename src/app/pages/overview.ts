@@ -387,43 +387,43 @@ import {
       </div>
     </section>
 
-    <!-- Section 4: Balance Wave Philosophy (ZoeWave / AshWave) -->
+    <!-- Section 4: Balance Wave Philosophy -->
     <section class="mx-auto max-w-[1200px] px-6 py-16 lg:py-20">
       <div class="rounded-2xl border border-[#C4E2D8] bg-gradient-to-br from-[#ECF7F3] via-[#F6FBF9] to-[#E8F4FA] p-6 sm:p-10">
         <div class="grid gap-10 lg:grid-cols-12 lg:items-center">
           <div class="lg:col-span-5 space-y-4">
             <p class="text-sm font-medium text-[#0C5F84]">03. Balance Wave Philosophy</p>
             <h2 class="font-display text-3xl font-semibold tracking-tight text-[#0B2530]">
-              Find your balance between flow and finality.
+              Maximize your life. Minimize your debt.
             </h2>
             <p class="text-sm leading-relaxed text-[#3A5D6A]">
-              AshWave is rooted in a dual coastal principle: <strong class="text-[#0B2530]">ZoeWave</strong>
-              embodies life and water—liquidity, continuous work, and inclusive circulation—while
-              <strong class="text-[#0B2530]">AshWave</strong> embodies fire and renewal—pruning systemic
-              waste, enforcing cryptographic truth, and distilling risk into resilient capital.
+              AshWave is rooted in a dual coastal principle: <strong class="text-[#0B2530]">Life &amp; Water</strong>
+              expands liquidity, cashflow clarity, and opportunity—while
+              <strong class="text-[#0B2530]">Renewal &amp; Fire</strong> burns down wasteful interest
+              drag, predatory debt cycles, and systemic friction.
             </p>
             <div class="pt-2 flex items-center gap-3">
               <button
                 type="button"
-                (click)="waveMode.set('zoe')"
+                (click)="waveMode.set('life')"
                 [class]="
-                  waveMode() === 'zoe'
+                  waveMode() === 'life'
                     ? 'rounded-lg bg-[#0C5F84] px-4 py-2 text-xs font-semibold text-white transition-colors'
                     : 'rounded-lg border border-[#C4E2D8] bg-white px-4 py-2 text-xs font-semibold text-[#0B2530] hover:bg-[#E0F3EC] transition-colors'
                 "
               >
-                ZoeWave · Life / Water
+                Maximize Life · Water
               </button>
               <button
                 type="button"
-                (click)="waveMode.set('ash')"
+                (click)="waveMode.set('debt')"
                 [class]="
-                  waveMode() === 'ash'
+                  waveMode() === 'debt'
                     ? 'rounded-lg bg-[#0C5F84] px-4 py-2 text-xs font-semibold text-white transition-colors'
                     : 'rounded-lg border border-[#C4E2D8] bg-white px-4 py-2 text-xs font-semibold text-[#0B2530] hover:bg-[#E0F3EC] transition-colors'
                 "
               >
-                AshWave · Renewal / Fire
+                Minimize Debt · Fire
               </button>
             </div>
           </div>
@@ -432,22 +432,22 @@ import {
             <div class="rounded-xl border border-[#C4E2D8] bg-white p-6 space-y-4">
               <div class="flex items-center justify-between">
                 <span class="font-display text-lg font-semibold text-[#0B2530]">
-                  {{ waveMode() === 'zoe' ? 'ZoeWave — Life &amp; Ocean Current' : 'AshWave — Fire &amp; Cryptographic Renewal' }}
+                  {{ waveMode() === 'life' ? 'Maximize Your Life — Ocean Current' : 'Minimize Your Debt — Renewal &amp; Discipline' }}
                 </span>
                 <span class="text-xs font-medium text-[#0C5F84]">
-                  {{ waveMode() === 'zoe' ? 'Fluidity &amp; Access' : 'Discipline &amp; Proof' }}
+                  {{ waveMode() === 'life' ? 'Fluidity &amp; Access' : 'Compression &amp; Proof' }}
                 </span>
               </div>
 
               <p class="text-sm leading-relaxed text-[#3A5D6A]">
-                @if (waveMode() === 'zoe') {
-                  Water carries energy across shorelines without friction. In financial terms,
-                  ZoeWave powers continuous credit visibility for freelancers, real-time SeaWeed
-                  spending awareness, and open developer rails where economic participation circulates freely.
+                @if (waveMode() === 'life') {
+                  Water carries energy across shorelines without friction. AshWave powers continuous
+                  credit visibility for freelancers, real-time SeaWeed spending awareness, and open
+                  developer rails where economic participation circulates freely.
                 } @else {
                   Fire clears away inefficiency so durable ecosystems can thrive. AshWave replaces
-                  wasteful Proof-of-Work hash burning with Proof of Useful Work, enforces zero-knowledge
-                  privacy over sensitive financial witnesses, and reduces bank formation friction.
+                  wasteful Proof-of-Work hash burning with Proof of Useful Work, shrinks revolving
+                  interest drag, and turns savings into debt-free autonomy.
                 }
               </p>
 
@@ -460,14 +460,14 @@ import {
                 <path
                   d="M0 54 Q 75 20, 150 54 T 300 54 T 450 54 T 600 54"
                   fill="none"
-                  [attr.stroke]="waveMode() === 'zoe' ? '#2596CA' : '#7FD8BE'"
+                  [attr.stroke]="waveMode() === 'life' ? '#2596CA' : '#7FD8BE'"
                   stroke-width="3"
                   stroke-linecap="round"
                 />
                 <path
                   d="M0 44 Q 75 78, 150 44 T 300 44 T 450 44 T 600 44"
                   fill="none"
-                  [attr.stroke]="waveMode() === 'ash' ? '#E9A84C' : '#48B89F'"
+                  [attr.stroke]="waveMode() === 'debt' ? '#E9A84C' : '#48B89F'"
                   stroke-width="2.5"
                   stroke-linecap="round"
                 />
@@ -648,7 +648,7 @@ export class Overview {
   readonly flywheelStages = FLYWHEEL_STAGES;
 
   readonly selectedFlywheelId = signal<string>('users');
-  readonly waveMode = signal<'zoe' | 'ash'>('zoe');
+  readonly waveMode = signal<'life' | 'debt'>('life');
   readonly submitted = signal(false);
   readonly submittedName = signal('');
   readonly submittedTopic = signal('');
